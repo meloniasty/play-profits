@@ -1,0 +1,5 @@
+GET         /                                controllers.HomeController.index
+POST        /profit/calculate/:bankId        controllers.ProfitController.calculate(bankId)
+GET         /profit/table/:bankId            controllers.ProfitController.fetchTable(bankId)
+POST        /profit/table/:bankId            controllers.ProfitController.saveTable(bankId)
+POST        /profit/edit/cell                controllers.ProfitController.editCell()
